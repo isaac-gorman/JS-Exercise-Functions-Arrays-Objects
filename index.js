@@ -16,6 +16,8 @@ function addNumbers(num1, num2) {
   return num1 + num2;
 }
 
+// console.log(addNumbers(3,4));
+
 // ⭐️ Example Challenge end ⭐️
 
 
@@ -35,9 +37,12 @@ function addNumbers(num1, num2) {
  * the returned value should look like: 'Goodbye, Andy. Have a great day.'
  * 
 */
-function sayGoodbye(/* code here */) {
-  /* code here */
+
+function sayGoodbye(name) {
+  return 'Goodbye, ' + name + '.' + ' Have a great day.';
 }
+
+console.log(sayGoodbye('Isaac'));
 
 /**
  * ### Challenge `temperatureCtoF`
@@ -53,9 +58,12 @@ function sayGoodbye(/* code here */) {
  * Hint 1: The formula for converting celsius to fahrenheit is t*9/5 + 32 where t is the temperature in celsius.
  * Hint 2: There is a very easy way to round numbers in JS. Do a google search to find out how. 
 */
-function temperatureCtoF(/* code here */) {
+function temperatureCtoF(temp) {
+  return Math.round(temp * 9 /5 + 32);
   /* code here */
 }
+
+console.log(temperatureCtoF(24));
 
 /**
  * ### Challenge `temperatureInF`
@@ -74,9 +82,22 @@ function temperatureCtoF(/* code here */) {
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(/* code here */) {
-  /* code here */
+
+
+function temperatureInF(t, m) {
+  
+  if (m == 'F') {
+   return t + m ;
+    
+  } else if ( m == 'C') {
+    return Math.round(t * 9 /5 + 32) + 'F' ;
+  }
+
 }
+
+console.log(temperatureInF(24, 'F'));
+ /* code here */
+
 
 
 /**
@@ -95,9 +116,14 @@ function temperatureInF(/* code here */) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
+function makePersonObject(id, name, email) {
+  return {id, name, email}
+  
+
   /* code here */
 }
+console.log(makePersonObject(5, 'Leia', 'leia@leia.com'));
+
 
 /**
  * ### Challenge `getName`
@@ -112,9 +138,12 @@ function makePersonObject(/* code here */) {
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-function getName(/* code here */) {
+function getName(helloObj) {
+  return 'Hello, my name is' + ' ' + name;
   /* code here */
 }
+console.log()
+
 
 
 /**
@@ -132,7 +161,8 @@ function getName(/* code here */) {
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
+function appleIndex(array) {
+  return
   /* code here */
 }
 
